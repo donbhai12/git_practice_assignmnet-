@@ -1,12 +1,22 @@
-function str(prime){
-let count=0;
-for(let i=0;i<=prime;i++){
-  if (prime%2==0){
-   count++;
+function checkprime(num){
+let counter=0;
+for(let i=1;i<=num;i++){
+  if (num%2==0){
+   counter++;
 }
 }
-if(count==2){
- 
+if(counter==2){
+ return true
+}else{
+return false;
 }
 
 }
+
+let ans= checkprime(18);
+if(ans==true){
+console.log("is prime");
+}else{
+console.log("not prime");
+}
+
